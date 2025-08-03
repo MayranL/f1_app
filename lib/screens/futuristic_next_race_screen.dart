@@ -87,10 +87,12 @@ class _FuturisticNextRaceScreenState extends State<FuturisticNextRaceScreen>
             fit: StackFit.expand,
             children: [
               // Fond du circuit
+/*
               Image.network(
                 bgImage,
                 fit: BoxFit.cover,
               ),
+*/
               // Effet néon animé
               AnimatedBuilder(
                 animation: _controller,
@@ -99,9 +101,9 @@ class _FuturisticNextRaceScreenState extends State<FuturisticNextRaceScreen>
                     decoration: BoxDecoration(
                       gradient: LinearGradient(
                         colors: [
-                          Colors.redAccent.withOpacity(0.4),
-                          Colors.purpleAccent.withOpacity(0.3),
-                          Colors.blueAccent.withOpacity(0.4),
+                          Colors.redAccent.withOpacity(0.3),
+                          Colors.orange.withOpacity(1),
+                          Colors.black.withOpacity(1),
                         ],
                         begin: Alignment.topLeft,
                         end: Alignment.bottomRight,
